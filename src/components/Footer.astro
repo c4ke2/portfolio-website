@@ -1,0 +1,59 @@
+---
+const currentYear = new Date().getFullYear();
+
+const footerLinks = [
+  {
+    title: "Home",
+    links: [
+      { text: "Home", url: "/" },
+      { text: "Features", url: "/features" },
+      { text: "Pricing", url: "/pricing" },
+      { text: "Contact", url: "/contact" }
+    ]
+  },
+  {
+    title: "Product",
+    links: [
+      { text: "Features", url: "/features" },
+      { text: "Pricing", url: "/pricing" },
+      { text: "FAQ", url: "/faqs" },
+      { text: "Changelog", url: "/changelog" },
+      { text: "Integrations", url: "/integrations" }
+    ]
+  },
+  {
+    title: "Resources",
+    links: [
+      { text: "Blog", url: "/blog" },
+      { text: "Case Studies", url: "/case-study" },
+      { text: "404 Page", url: "/404" }
+    ]
+  },
+  {
+    title: "Company",
+    links: [
+      { text: "About Us", url: "/company" },
+      { text: "Careers", url: "/career" },
+      { text: "Contact", url: "/contact" },
+      { text: "Reviews", url: "/reviews" },
+      { text: "Privacy Policy", url: "/privacy-policy" },
+      { text: "Terms of Service", url: "/terms-conditions" }
+    ]
+  }
+];
+---
+
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+  <div class="container-custom">    
+    <div class="border-t border-gray-800 pt-8 mt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm mb-4 md:mb-0">
+          &copy; {currentYear} Alyssa Gregorash. All rights reserved.
+        </p>
+        <div class="flex space-x-6">
+          <a href="/privacy-policy" class="text-gray-400 hover:text-primary-400 text-sm transition-colors">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

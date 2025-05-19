@@ -1,0 +1,78 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import ContactForm from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+import HeroSection from '../components/HeroSection.astro';
+import ProjectsCode from '../components/ProjectsCode.astro';
+import ProjectsGraphic from '../components/ProjectsGraphic.astro';
+import ProjectsWriting from '../components/ProjectsWriting.astro';
+import LanguageTags from '../components/LanguageTags.astro';
+---
+
+<Layout title="Alyssa's Portfolio">
+  <Header />
+  <main>
+
+  <div class="bg-gray-100 dark:bg-gray-800 container-custom rounded-md pt-48 p-16 grid md:grid-cols-2 gap-12 items-center mb-12">
+      <div id="about">
+              <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Alyssa Gregorash</h2>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">
+                Hello, I am Alyssa, a 2024 graduate with a passion for development, design, and storytelling.
+              </p>
+              <p class="font-bold">Quick Facts</p>
+              <ul class="list-disc pl-8">
+                <li>Location: Winnipeg, MB, Canada</li>
+                <li>Education: Bachelor's of Computer Science, History Minor</li>
+                <li>Scope: Frontend, Backend, Databases, Design</li>
+                <li>Interests: Writing, Gaming, Drawing, Cats</li>
+              </ul>
+              <p class="font-bold">Contact</p>
+              <ul class="list-disc pl-8">
+                <a class="inline-block px-4 py-2 mx-2 my-4 rounded-full bg-secondary-300 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 text-lg" href="mailto:&#x61;&#x67;&#x72;&#x65;&#x67;&#x6F;&#x61;&#x73;&#x68;&#x62;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;" target="_blank">Email<a/>
+                <a class="inline-block px-4 py-2 mx-2 my-4 rounded-full bg-secondary-300 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 text-lg" href="https://www.linkedin.com/in/alyssa-gregorash-6105142a6/" target="_blank">Linkedin<a/>
+              </ul>
+              <p class="mt-4">If you are looking for my alias Graduation Cat, look <a href="https://graduationcat.ca/" target="_blank" class="font-bold">here</a>.</p>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-xl">
+              <img src="/src/assets/img/CreditAutumn.jpg" alt="cat" class="w-full h-auto" />
+      </div>
+  </div>
+
+    <div id="tools">
+      <HeroSection 
+        title="Languages & Tools" 
+        description=""
+      />
+    </div>
+
+    <LanguageTags/>
+
+    <div id="projects">
+      <HeroSection 
+        title="Projects" 
+        description=""
+      />
+    </div>
+
+    <div class="container-custom text-center max-w-3xl mx-auto mt-8">
+        <span>Jump to...  </span>
+        <a href="#devheader" class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
+            Development
+        </a>
+        <a href="#graphicheader" class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
+            Design & Graphics
+        </a>
+        <a href="#writingheader" class="inline-block px-4 py-1 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
+            Writing
+        </a>
+    </div>
+
+    <ProjectsCode/>
+
+    <ProjectsGraphic/>
+    
+    <ProjectsWriting/>
+  </main>
+  <Footer />
+</Layout> 

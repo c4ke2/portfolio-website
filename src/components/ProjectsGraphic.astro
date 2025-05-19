@@ -1,0 +1,68 @@
+---
+const projects = [
+  {
+    content: "The official website for Ashworth Children's Centre inc.",
+    title: "Ashworth Children's Centre Website",
+    tags: "Website, Professional, Layout",
+    pic: "src/assets/img/ashworthcc.png",
+    link: "https://www.ashworthcc.ca/"
+  },
+  {
+    content: "A website to compile all projects published under my alias, Graduation Cat.",
+    title: "Graduation Cat Website",
+    tags: "Website, Layout",
+    pic: "src/assets/img/gradcatweb.png",
+    link: "https://graduationcat.ca/"
+  },
+  {
+    content: "A set of graphical assets for use in game development or art.",
+    title: "House Interior 32x32",
+    tags: "Game Asset, Tileset, Pixel Art",
+    pic: "src/assets/img/housetileset.png",
+    link: "https://graduation-cat.itch.io/house-interior-tileset-32x32"
+  },
+  {
+    content: "A series of art pieces made for a school project, with the purpose of exploring the Adobe Creative Suite.",
+    title: "Cryptid Coverup",
+    tags: "Photoshop, Illustrator, InDesign",
+    pic: "src/assets/img/cryptid.png",
+    link: "https://c4ke2.github.io/art_cryptid.html"
+  }
+];
+---
+
+<section class="section">
+  <div class="container-custom">
+    <div class="text-center max-w-3xl mx-auto mb-8">
+      <h2 id="graphicheader" class="mb-6 text-gray-900 dark:text-white">Design & Graphics</h2>
+    </div>
+    
+    <div class="grid md:grid-cols-3 gap-8 mb-0">
+      {projects.map((project, index) => (
+        <a 
+          href={project.link}
+          target="_blank"
+          class="card p-6 border border-gray-200 dark:border-gray-700" 
+          style={`animation-delay: ${index * 150}ms`}
+        >
+          <img 
+              src={project.pic} 
+              class="w-full h-50% rounded-lg pb-1 object-cover"
+              loading="lazy"
+          />
+
+          <div class="flex items-center">
+              <div>
+                <p class="font-semibold text-gray-900 dark:text-white">{project.title}</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">{project.tags}</p>
+              </div>
+          </div>
+
+          <blockquote class="mt-6 mb-6 text-gray-700 dark:text-gray-300">{project.content}</blockquote>
+          
+        </a>
+      ))}
+    </div>
+    
+  </div>
+</section>

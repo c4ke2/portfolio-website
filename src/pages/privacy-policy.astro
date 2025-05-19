@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import HeroSection from '../components/HeroSection.astro';
+---
+
+<Layout title="Privacy Policy - Sassify">
+  <Header />
+  <main>
+    <HeroSection 
+      title="Privacy Policy" 
+      description="Last updated: June 1, 2023"
+    />
+    
+    <section class="py-16">
+      <div class="container-custom">
+        <div class="max-w-3xl mx-auto prose dark:prose-invert prose-headings:font-display prose-headings:font-semibold prose-a:text-primary-600 dark:prose-a:text-primary-400 prose-img:rounded-lg">
+          <p class="lead mb-4">
+            I don't want your data.
+          </p>
+
+          <p>
+            If you get any cookies, I did not put them there.  If I get your email, it will only be used to talk about whichever product or topic you have come to me with.
+          </p>
+        </div>
+        <div class="flex justify-center gap-4 flex-wrap mt-8">
+          <a href="/" class="btn-primary">
+            Return Home
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout> 

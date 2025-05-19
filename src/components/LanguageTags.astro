@@ -1,0 +1,167 @@
+---
+const tools = [
+  {
+    text: "C++",
+    pic: "devicon-cplusplus-plain colored",
+    link: "https://cplusplus.com/"
+  },
+  {
+    text: "C#",
+    pic: "devicon-csharp-plain colored",
+    link: "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+  },
+  {
+    text: "C",
+    pic: "devicon-c-plain colored",
+    link: "https://en.wikipedia.org/wiki/C_(programming_language)"
+  },
+  {
+    text: "Java",
+    pic: "devicon-java-plain colored",
+    link: "https://www.java.com/en/"
+  },
+  {
+    text: "Python",
+    pic: "devicon-python-plain colored",
+    link: "https://www.python.org/"
+  },
+  {
+    text: "Processing",
+    pic: "devicon-processing-plain colored",
+    link: "https://processing.org/"
+  },
+  {
+    text: "Javascript",
+    pic: "devicon-javascript-plain colored",
+    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+  },
+  {
+    text: "HTML",
+    pic: "devicon-html5-plain colored",
+    link: "https://en.wikipedia.org/wiki/HTML"
+  },
+  {
+    text: "CSS",
+    pic: "devicon-css3-plain colored",
+    link: "https://developer.mozilla.org/en-US/docs/Web/CSS"
+  },
+  {
+    text: "Tailwind",
+    pic: "devicon-tailwindcss-original colored",
+    link: "https://tailwindcss.com/"
+  },
+  {
+    text: "React",
+    pic: "devicon-react-original colored",
+    link: "https://react.dev/"
+  },
+  {
+    text: "Astro",
+    pic: "devicon-astro-plain colored",
+    link: "https://astro.build/"
+  },
+  {
+    text: "XML",
+    pic: "devicon-xml-plain colored",
+    link: "https://developer.mozilla.org/en-US/docs/Web/XML/Guides/XML_introduction"
+  },
+  {
+    text: "SQL",
+    pic: "devicon-sqldeveloper-plain colored",
+    link: "https://en.wikipedia.org/wiki/SQL"
+  },
+  {
+    text: "MySQL",
+    pic: "devicon-mysql-original colored",
+    link: "https://www.mysql.com/"
+  },
+  {
+    text: "MongoDB",
+    pic: "devicon-mongodb-plain colored",
+    link: "https://www.mongodb.com/"
+  },
+  {
+    text: "JSON",
+    pic: "devicon-json-plain colored colored",
+    link: "https://www.json.org/json-en.html"
+  },
+  {
+    text: "MarkDown",
+    pic: "devicon-markdown-original",
+    link: "https://www.markdownguide.org/"
+  },
+  {
+    text: "OpenGL",
+    pic: "devicon-opengl-plain colored",
+    link: "https://www.opengl.org/"
+  },
+  {
+    text: "Unity",
+    pic: "devicon-unity-line colored",
+    link: "https://unity.com/"
+  },
+  {
+    text: "Unreal Engine (Cinemachine Only)",
+    pic: "devicon-unrealengine-original colored",
+    link: "https://www.unrealengine.com/en-US"
+  },
+  {
+    text: "Android Studio",
+    pic: "devicon-androidstudio-plain colored",
+    link: "https://developer.android.com/studio"
+  },
+  {
+    text: "Git",
+    pic: "devicon-git-plain colored",
+    link: "https://git-scm.com/"
+  },
+  {
+    text: "GitHub",
+    pic: "devicon-github-original colored",
+    link: "https://github.com/"
+  },
+  {
+    text: "GitLab",
+    pic: "devicon-gitlab-plain colored",
+    link: "https://about.gitlab.com/"
+  },
+  {
+    text: "Adobe Illustrator",
+    pic: "devicon-illustrator-plain colored",
+    link: "https://www.adobe.com/ca/products/illustrator.html"
+  },
+  {
+    text: "Adobe Photoshop",
+    pic: "devicon-photoshop-plain colored",
+    link: "https://www.adobe.com/products/photoshop.html"
+  },
+  {
+    text: "Adobe PremierPro",
+    pic: "devicon-premierepro-plain colored",
+    link: "https://www.adobe.com/products/premiere.html"
+  },
+  {
+    text: "Adobe InDesign",
+    pic: "devicon-illustrator-plain",
+    link: "https://www.adobe.com/ca/products/indesign.html/"
+  }
+];
+---
+
+<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+<section class="section">
+  <div class="container-custom items-center">
+    <div class="mb-0">
+      {tools.map((tool, index) => (
+        <a href={tool.link} 
+        target="_blank"
+        class="inline-block px-4 py-1 mx-2 rounded-full bg-secondary-100 dark:bg-secondary-900 text-secondary-600 dark:text-secondary-300 font-medium text-sm mb-4">
+            <i class={tool.pic}></i>
+            {tool.text}   
+        </a>
+      ))}
+    </div>
+    
+  </div>
+</section>

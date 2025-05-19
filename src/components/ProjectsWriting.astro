@@ -1,0 +1,47 @@
+---
+const projects = [
+  {
+    content: "A chance encounter leads an aspiring mercenary to brush with the supernatural.  The path he's stumbled on drives close to the deepest corners of his past, the most vivid mysteries of the Ambling Expanse, and the dark presence wedged next to his mind.",
+    title: "Across the Ambling Expanse",
+    tags: "Novel, Fiction, ~470 pages, Fantasy",
+    pic: "src/assets/img/amblingexpanse.png",
+    link: "https://graduation-cat.itch.io/across-the-ambling-expanse"
+  }
+];
+---
+
+<section class="section">
+  <div class="container-custom">
+    <div class="text-center max-w-3xl mx-auto mb-8">
+      <h2 id="writingheader" class="mb-6 text-gray-900 dark:text-white">Writing</h2>
+    </div>
+    
+    <div class="grid md:grid-cols-3 gap-8 mb-0">
+      {projects.map((project, index) => (
+        <a 
+          href={project.link}
+          target="_blank"
+          class="card p-6 border border-gray-200 dark:border-gray-700" 
+          style={`animation-delay: ${index * 150}ms`}
+        >
+          <img 
+              src={project.pic} 
+              class="w-full h-50% rounded-lg pb-1 object-cover"
+              loading="lazy"
+          />
+
+          <div class="flex items-center">
+              <div>
+                <p class="font-semibold text-gray-900 dark:text-white">{project.title}</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">{project.tags}</p>
+              </div>
+          </div>
+
+          <blockquote class="mt-6 mb-6 text-gray-700 dark:text-gray-300">{project.content}</blockquote>
+          
+        </a>
+      ))}
+    </div>
+    
+  </div>
+</section>
